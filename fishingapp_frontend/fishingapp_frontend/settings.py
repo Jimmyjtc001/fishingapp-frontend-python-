@@ -31,7 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'homepage.apps.HomepageConfig',
+# Our Apps
+    'pages.apps.PagesConfig',
+    # 'gateway.apps.GatewayConfig',
+    # 'foundations.apps.FoundationsConfig',
+    # 'dashboard.apps.DashboardConfig',
+    # 'instrument.apps.InstrumentConfig',
+    # 'userprofile.apps.UserprofileConfig',
+    # 'report.apps.ReportConfig',
+    # 'sensor.apps.SensorConfig',
+
+    # Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'corsheaders',
+    # # Third Party Apps`
+#    'corsheaders',
 ]
 
 MIDDLEWARE = [

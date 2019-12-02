@@ -1,0 +1,43 @@
+<!-- homepage/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>FishingAPP | Home</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+    <h1>Reports</h1>
+
+    <table style="width:100%">
+  <tr>
+    <th>Report Name</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Report 1</td>
+    <td>Download A good place for fishing for angler</td>
+    <td>
+        <a href="{% url 'report_01_page' %}">View</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Report 2</td>
+    <td>This is a garbage report which does nothing.</td>
+    <td>View</td>
+  </tr>
+</table>
+
+    <a href="{% url 'dashboard_page' %}">Back to Dashboard</a>
+
+</body>
+</html>

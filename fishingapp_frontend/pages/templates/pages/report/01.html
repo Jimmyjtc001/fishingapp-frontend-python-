@@ -1,0 +1,23 @@
+<!-- homepage/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>FishingAPP | Report 1</title>
+</head>
+<body>
+    <script>
+        {% include 'pages/report/01.js' %}
+    </script>
+
+    <h1>Report 01</h1>
+
+    <button onclick="downloadTemperatureDataOnClick();">Download Temperature Sensor Data</button>
+
+    <br />
+    <br />
+
+
+    <a href="{% url 'report_list_page' %}">Back to Reports</a>
+
+</body>
+</html>

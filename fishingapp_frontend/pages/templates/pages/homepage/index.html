@@ -1,0 +1,29 @@
+<!-- homepage/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>FishingAPP | Home</title>
+</head>
+<body>
+    <script>
+        {% include "pages/homepage/index.js" %}
+    </script>
+
+    <h1>FishingApp</h1>
+    <p>Welcome to FishingApp,  We recommend the best places to fish and the best days!</p>
+    <p>
+        <button type="button" onclick="onLoginClick()">Login</button>
+    </p>
+    <p>
+        <button type="button" onclick="onRegisterClick()">Register</button>
+    </p>
+    <p>
+        <button type="button" onclick="onContactClick()">Contact</button>
+    </p>
+    <p>
+        <button type="button" onclick="onGetVersionClick()">Get Version</button>
+    </p>
+    Version:<p id="getVersionId">---</p>
+
+</body>
+</html>
