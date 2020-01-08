@@ -11,7 +11,7 @@ function onLoginClick() {
             const resultObject = JSON.parse(responseString);
             const tokenString = resultObject.token;
             console.log(tokenString);
-            localStorage.setItem('indoor_air_token', tokenString); // http://127.0.0.1:9000
+            localStorage.setpm('indoor_air_token', tokenString); // http://127.0.0.1:9000
             window.location.href = "/dashboard";
         }
     }
